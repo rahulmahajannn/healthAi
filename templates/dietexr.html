@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Diet and Exercise</title>
+    <link rel="stylesheet" href="../static/dietexr.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Health Ai!</h1>
+      <div class="title-text">
+        <div class="title login">Let's Get Diet For You!!</div>
+        <div class="title signup">Ready For Some Exercise!</div>
+      </div>
+      <div class="form-container">
+        <div class="slide-controls">
+          <input type="radio" name="slide" id="login" checked />
+          <input type="radio" name="slide" id="signup" />
+          <label for="login" class="slide login">Diet</label>
+          <label for="signup" class="slide signup">Exercise</label>
+          <div class="slider-tab"></div>
+        </div>
+        <div class="form-inner">
+          <form action="/info" class="login" method="POST">
+            <div class="field">
+              <input
+                type="text"
+                name="weight"
+                placeholder="Weight (in kg)"
+                required
+              />
+            </div>
+            <div class="field">
+              <input
+                type="text"
+                name="height"
+                placeholder="Height(in cm)"
+                required
+              />
+            </div>
+            <div class="field">
+              <input type="text" name="age" placeholder="Age" required />
+            </div>
+            <div class="field">
+              <select name="gender" class="x">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+            <div class="field">
+              <select name="dietType" class="x">
+                <option value="Weight Loss">Weight Loss</option>
+                <option value="Weight Gain">Weight Gain</option>
+                <option value="Healthy">Healthy</option>
+              </select>
+            </div>
+            <div class="field">
+              <select name="dietTime" class="x">
+                <option value="Breakfast">Breakfast</option>
+                <option value="Lunch">Lunch</option>
+                <option value="Dinner">Dinner</option>
+              </select>
+            </div>
+            <div class="field">
+              <select name="category" class="x">
+                <option value="Veg">Vegetarian</option>
+                <option value="NonVeg">Non-Vegetarian</option>
+              </select>
+            </div>
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" name="form1" value="Let's Eat!" />
+            </div>
+          </form>
+
+          <form action="/info" class="signup" method="POST">
+            <div class="field">
+              <input
+                type="text"
+                name="weight"
+                placeholder="Weight (in kg)"
+                required
+              />
+            </div>
+            <div class="field">
+              <input
+                type="text"
+                name="height"
+                placeholder="Height (in cm)"
+                required
+              />
+            </div>
+            <div class="field">
+              <input type="text" name="age" placeholder="Age" required />
+            </div>
+            <div class="field">
+              <select name="gender" class="x">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+            <div class="field">
+              <select name="dietType" class="x">
+                <option value="Weight Loss">Weight Loss</option>
+                <option value="Weight Gain">Weight Gain</option>
+                <option value="Healthy">Healthy</option>
+              </select>
+            </div>
+
+            <div class="field btn">
+              <div class="btn-layer letsGoBtn"></div>
+              <input type="submit" name="form2" value="Let's Go!!" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const loginText = document.querySelector(".title-text .login");
+      const loginForm = document.querySelector("form.login");
+      const loginBtn = document.querySelector("label.login");
+      const signupBtn = document.querySelector("label.signup");
+      const signupLink = document.querySelector("form .signup-link a");
+      const letsGoBtn = document.querySelector(".letsGoBtn");
+      letsGoBtn.addEventListener("click", (e) => {
+        console.log("ethe?");
+        e.preventDefault();
+        const currentStreak = localStorage.getItem("exerciseStreak");
+        console.log(
+          "🚀 ~ file: dietexr.html:109 ~ letsGoBtn.addEventListener ~ currentStreak:",
+          currentStreak
+        );
+        currentStreak
+          ? localStorage.setItem("exerciseStreak", +currentStreak + 1)
+          : localStorage.setItem("exerciseStreak", 1);
+      });
+      signupBtn.onclick = () => {
+        loginForm.style.marginLeft = "-50%";
+        loginText.style.marginLeft = "-50%";
+      };
+      loginBtn.onclick = () => {
+        loginForm.style.marginLeft = "0%";
+        loginText.style.marginLeft = "0%";
+      };
+      signupLink.onclick = () => {
+        signupBtn.click();
+        return false;
+      };
+    </script>
+  </body>
+</html>

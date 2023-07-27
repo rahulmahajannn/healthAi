@@ -1,0 +1,249 @@
+Exercise Name,Calories Burnt
+"Cycling, mountain bike, bmx",598
+"Cycling, <10 mph, leisure bicycling",281
+"Cycling, >20 mph, racing",1126
+"Cycling, 10-11.9 mph, light",422
+"Cycling, 12-13.9 mph, moderate",563
+"Cycling, 14-15.9 mph, vigorous",704
+"Cycling, 16-19 mph, very fast, racing",844
+Unicycling,352
+"Stationary cycling, very light",211
+"Stationary cycling, light",387
+"Stationary cycling, moderate",493
+"Stationary cycling, vigorous",739
+"Stationary cycling, very vigorous",880
+"Calisthenics, vigorous, pushups, situps?",563
+"Calisthenics, light",246
+"Circuit training, minimal rest",563
+"Weight lifting, body building, vigorous",422
+"Weight lifting, light workout",211
+Health club exercise,387
+Stair machine,633
+"Rowing machine, light",246
+"Rowing machine, moderate",493
+"Rowing machine, vigorous",598
+"Rowing machine, very vigorous",844
+Ski machine,493
+"Aerobics, low impact",352
+"Aerobics, high impact",493
+"Aerobics, step aerobics",598
+"Aerobics, general",457
+Jazzercise,422
+"Stretching, hatha yoga",281
+Mild stretching,176
+Instructing aerobic class,422
+Water aerobics,281
+"Ballet, twist, jazz, tap",317
+"Ballroom dancing, slow",211
+"Ballroom dancing, fast",387
+"Running, 5 mph (12 minute mile)",563
+"Running, 5.2 mph (11.5 minute mile)",633
+"Running, 6 mph (10 min mile)",704
+"Running, 6.7 mph (9 min mile)",774
+"Running, 7 mph (8.5 min mile)",809
+"Running, 7.5mph (8 min mile)",880
+"Running, 8 mph (7.5 min mile)",950
+"Running, 8.6 mph (7 min mile)",985
+"Running, 9 mph (6.5 min mile)",1056
+"Running, 10 mph (6 min mile)",1126
+"Running, 10.9 mph (5.5 min mile)",1267
+"Running, cross country",633
+"Running, general",563
+"Running, on a track, team practice",704
+"Running, stairs, up",1056
+"Track and field (shot, discus)",281
+"Track and field (high jump, pole vault)",422
+Track and field (hurdles),704
+Archery,246
+Badminton,317
+"Basketball game, competitive",563
+"Playing basketball, non game",422
+"Basketball, officiating",493
+"Basketball, shooting baskets",317
+"Basketball, wheelchair",457
+"Running, training, pushing wheelchair",563
+Billiards,176
+Bowling,211
+"Boxing, in ring",844
+"Boxing, punching bag",422
+"Boxing, sparring",633
+"Coaching: football, basketball, soccer?",281
+"Cricket (batting, bowling)",352
+Croquet,176
+Curling,281
+Darts (wall or lawn),176
+Fencing,422
+"Football, competitive",633
+"Football, touch, flag, general",563
+"Football or baseball, playing catch",176
+"Frisbee playing, general",211
+"Frisbee, ultimate frisbee",563
+"Golf, general",317
+"Golf, walking and carrying clubs",317
+"Golf, driving range",211
+"Golf, miniature golf",211
+"Golf, walking and pulling clubs",303
+"Golf, using power cart",246
+Gymnastics,281
+Hacky sack,281
+Handball,844
+"Handball, team",563
+"Hockey, field hockey",563
+"Hockey, ice hockey",563
+"Riding a horse, general",281
+"Horesback riding, saddling horse",246
+"Horseback riding, grooming horse",246
+"Horseback riding, trotting",457
+"Horseback riding, walking",176
+"Horse racing, galloping",563
+"Horse grooming, moderate",422
+Horseshoe pitching,211
+Jai alai,844
+"Martial arts, judo, karate, jujitsu",704
+"Martial arts, kick boxing",704
+"Martial arts, tae kwan do",704
+Krav maga training,704
+Juggling,281
+Kickball,493
+Lacrosse,563
+Orienteering,633
+Playing paddleball,422
+"Paddleball, competitive",704
+Polo,563
+"Racquetball, competitive",704
+Playing racquetball,493
+"Rock climbing, ascending rock",774
+"Rock climbing, rappelling",563
+"Jumping rope, fast",844
+"Jumping rope, moderate",704
+"Jumping rope, slow",563
+Rugby,704
+"Shuffleboard, lawn bowling",211
+Skateboarding,352
+Roller skating,493
+"Roller blading, in-line skating",844
+Sky diving,211
+"Soccer, competitive",704
+Playing soccer,493
+Softball or baseball,352
+"Softball, officiating",281
+"Softball, pitching",422
+Squash,844
+"Table tennis, ping pong",281
+Tai chi,281
+Playing tennis,493
+"Tennis, doubles",422
+"Tennis, singles",563
+Trampoline,246
+"Volleyball, competitive",563
+Playing volleyball,211
+"Volleyball, beach",563
+Wrestling,422
+Wallyball,493
+"Backpacking, Hiking with pack",493
+"Carrying infant, level ground",246
+"Carrying infant, upstairs",352
+"Carrying 16 to 24 lbs, upstairs",422
+"Carrying 25 to 49 lbs, upstairs",563
+"Standing, playing with children, light",197
+"Walk/run, playing with children, moderate",281
+"Walk/run, playing with children, vigorous",352
+Carrying small children,211
+"Loading, unloading car",211
+"Climbing hills, carrying up to 9 lbs",493
+"Climbing hills, carrying 10 to 20 lb",528
+"Climbing hills, carrying 21 to 42 lb",563
+"Climbing hills, carrying over 42 lb",633
+Walking downstairs,211
+"Hiking, cross country",422
+Bird watching,176
+"Marching, rapidly, military",457
+"Children's games, hopscotch, dodgeball",352
+Pushing stroller or walking with children,176
+Pushing a wheelchair,281
+Race walking,457
+"Rock climbing, mountain climbing",563
+Walking using crutches,352
+Walking the dog,211
+"Walking, under 2.0 mph, very slow",141
+"Walking 2.0 mph, slow",176
+Walking 2.5 mph,211
+"Walking 3.0 mph, moderate",232
+"Walking 3.5 mph, brisk pace",267
+"Walking 3.5 mph, uphill",422
+"Walking 4.0 mph, very brisk",352
+Walking 4.5 mph,443
+Walking 5.0 mph,563
+"Boating, power, speed boat",176
+"Canoeing, camping trip",281
+"Canoeing, rowing, light",211
+"Canoeing, rowing, moderate",493
+"Canoeing, rowing, vigorous",844
+"Crew, sculling, rowing, competition",844
+Kayaking,352
+Paddle boat,281
+"Windsurfing, sailing",211
+"Sailing, competition",352
+"Sailing, yachting, ocean sailing",211
+"Skiing, water skiing",422
+Ski mobiling,493
+"Skin diving, fast",1126
+"Skin diving, moderate",880
+"Skin diving, scuba diving",493
+Snorkeling,352
+"Surfing, body surfing or board surfing",211
+"Whitewater rafting, kayaking, canoeing",352
+"Swimming laps, freestyle, fast",704
+"Swimming laps, freestyle, slow",493
+Swimming backstroke,493
+Swimming breaststroke,704
+Swimming butterfly,774
+"Swimming leisurely, not laps",422
+Swimming sidestroke,563
+Swimming synchronized,563
+"Swimming, treading water, fast, vigorous",704
+"Swimming, treading water, moderate",281
+"Water aerobics, water calisthenics",281
+Water polo,704
+Water volleyball,211
+Water jogging,563
+"Diving, springboard or platform",211
+"Ice skating, < 9 mph",387
+"Ice skating, average speed",493
+"Ice skating, rapidly",633
+"Speed skating, ice, competitive",1056
+"Cross country snow skiing, slow",493
+"Cross country skiing, moderate",563
+"Cross country skiing, vigorous",633
+"Cross country skiing, racing",985
+"Cross country skiing, uphill",1161
+"Snow skiing, downhill skiing, light",352
+"Downhill snow skiing, moderate",422
+"Downhill snow skiing, racing",563
+"Sledding, tobagganing, luge",493
+Snow shoeing,563
+Snowmobiling,246
+General housework,246
+Cleaning gutters,352
+Painting,317
+"Sit, playing with animals",176
+"Walk / run, playing with animals",281
+Bathing dog,246
+"Mowing lawn, walk, power mower",387
+"Mowing lawn, riding mower",176
+"Walking, snow blower",246
+"Riding, snow blower",211
+Shoveling snow by hand,422
+Raking lawn,303
+"Gardening, general",281
+"Bagging grass, leaves",281
+Watering lawn or garden,106
+"Weeding, cultivating garden",317
+"Carpentry, general",246
+Carrying heavy loads,563
+Carrying moderate loads upstairs,563
+General cleaning,246
+"Cleaning, dusting",176
+Taking out trash,211
+"Walking, pushing a wheelchair",281
+"Teach physical education,exercise class",281

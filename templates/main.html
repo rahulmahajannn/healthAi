@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/main.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/yourcode.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Health Ai</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="color-line" href="#">Health Ai! </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/info"
+              >Diet or Exercise<span class="sr-only">(current)</span></a
+            >
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Get another
+            </a>
+            <a
+              href="https://www.zomato.com/ncr/salad-days-gole-market-new-delhi/order?contextual_menu_params=eyJkaXNoX3NlYXJjaCI6eyJ0aXRsZSI6IkJlc3QgaW4gSGVhbHRoeSBGb29kIiwiZGlzaF9pZHMiOltdLCJjdWlzaW5lX2lkcyI6WyIxNDMiXX19"
+              target="_blank"
+            >
+              Get Meals To Home
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" id="cheat-btn" href="#cheat"
+                >Cheat Meals</a
+              >
+              <a class="dropdown-item" id="drink-btn" href="#drink">Drinks</a>
+              <a class="dropdown-item" id="main-body-btn" href="#"
+                >Recommendations</a
+              >
+            </div>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link" href="/"
+              >Logout<span class="sr-only">(current)</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="cheat-meal" hidden>
+      <h3>Cheat Meal:</h3>
+      <p>{{ext}}</p>
+    </div>
+    <div id="drink" hidden>
+      <h3>Drinks:</h3>
+      <p>{{drink}}</p>
+    </div>
+
+    <div class="main-body">
+      <div id="food" class="side-text">
+        <h3>{{msg}}</h3>
+        <ul>
+          {% for item in rec %}
+          <li>{{item}}</li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="streak">Exercise Streak: 1</div>
+
+      <div class="water-pic">
+        {% if check %}
+        <h2>Hey Buddy, Just A Reminder, drink water and stay hydrated!!!</h2>
+        <img src="./static/img/water.png" alt="water-reminder" />
+        <h2 class="maroBc">Your daily water requirement is {{water}} Liters</h2>
+        {% endif %}
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const cheatMeal = document.querySelector("#cheat-meal");
+      const cheatBtn = document.querySelector("#cheat-btn");
+      const drink = document.querySelector("#drink");
+      const drinkBtn = document.querySelector("#drink-btn");
+      const mainBody = document.querySelector(".main-body");
+      const mainBodyBtn = document.querySelector("#main-body-btn");
+      const streakButton = document.querySelector(".streak");
+      cheatBtn.addEventListener("click", () => {
+        cheatMeal.hidden = false;
+        drink.hidden = true;
+        mainBody.hidden = true;
+      });
+      drinkBtn.addEventListener("click", () => {
+        drink.hidden = false;
+        cheatMeal.hidden = true;
+        mainBody.hidden = true;
+      });
+      mainBodyBtn.addEventListener("click", () => {
+        mainBody.hidden = false;
+        drink.hidden = true;
+        cheatMeal.hidden = true;
+      });
+      streakButton.addEventListener("click", () => {
+        const currentStreak = localStorage.getItem("exerciseStreak");
+        console.log(
+          "🚀 ~ file: main.html:146 ~ streakButton.addEventListener ~ currentStreak:",
+          currentStreak
+        );
+        currentStreak
+          ? localStorage.setItem("exerciseStreak", +currentStreak + 1)
+          : localStorage.setItem("exerciseStreak", { date: new Date() });
+
+        currentStreak
+          ? (streakButton.innerText = "Exercise Streak: " + `10 `)
+          : (streakButton.innerText = "Exercise Streak: 1 ");
+      });
+    </script>
+  </body>
+</html>
